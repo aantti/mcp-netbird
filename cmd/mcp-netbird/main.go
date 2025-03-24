@@ -20,6 +20,7 @@ func newServer() *server.MCPServer {
 	)
 	tools.AddNetbirdPeerTools(s)
 	tools.AddNetbirdGroupTools(s)
+	tools.AddNetbirdPolicyTools(s)
 	return s
 }
 

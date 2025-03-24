@@ -50,6 +50,7 @@ The server requires the following environment variables:
 | --- | --- | --- |
 | `list_netbird_peers` | Peers | List all peers in your Netbird network |
 | `list_netbird_groups` | Groups | List all groups in your Netbird network |
+| `list_netbird_policies` | Policies | List all policies in your Netbird network |
 
 ## Usage
 
