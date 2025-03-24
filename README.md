@@ -58,7 +58,7 @@ The server requires the following environment variables:
 
 2. Install the `mcp-netbird` binary using one of the installation methods above.
 
-3. Add the server configuration to your client configuration file. For example, for Claude Desktop:
+3. Add the server configuration to your client configuration file. E.g., for Codeium Windsurf add the following to `~/.codeium/windsurf/mcp_config.json`:
 
    ```json
    {
