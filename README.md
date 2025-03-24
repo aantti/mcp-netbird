@@ -6,9 +6,7 @@ This project is derived from the [MCP Server for Grafana](https://github.com/gra
 
 **Note: this project is still in development and may not work as expected.**
 
-## Installation
-
-## From Source
+## Installing from source
 
 ### Clone the repository
 
@@ -23,7 +21,7 @@ cd mcp-netbird && \
 make install
 ```
 
-## From GitHub
+## Installing from GitHub
 
 ```bash
 go install github.com/aantti/mcp-netbird/cmd/mcp-netbird@latest
@@ -56,7 +54,7 @@ The server requires the following environment variables:
 
 1. Get your Netbird API token from the Netbird management console.
 
-2. Install the `mcp-netbird` binary using one of the installation methods above.
+2. Install the `mcp-netbird` binary using one of the installation methods above. Make sure the binary is in your PATH.
 
 3. Add the server configuration to your client configuration file. E.g., for Codeium Windsurf add the following to `~/.codeium/windsurf/mcp_config.json`:
 
@@ -98,7 +96,7 @@ go run cmd/mcp-netbird/main.go --transport sse --sse-address :8001
 
 ### Debugging
 
-The MCP Inspector is an interactive developer tool for testing and debugging MCP servers. Read more about it [here](https://modelcontextprotocol.io/docs/tools/inspector).
+The **MCP Inspector** is an interactive developer tool for testing and debugging MCP servers. Read more about it [here](https://modelcontextprotocol.io/docs/tools/inspector).
 
 Here's how to start the MCP Inspector:
 
