@@ -8,22 +8,22 @@ This project is derived from the [MCP Server for Grafana](https://github.com/gra
 
 ## Installation
 
-### From Source
+## From Source
 
-## Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/aantti/mcp-netbird
 ```
 
-## Build and install
+### Build and install
 
 ```bash
 cd mcp-netbird && \
 make install
 ```
 
-### From GitHub
+## From GitHub
 
 ```bash
 go install github.com/aantti/mcp-netbird/cmd/mcp-netbird@latest
