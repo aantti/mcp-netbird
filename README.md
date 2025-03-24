@@ -10,12 +10,16 @@ This project is derived from the [MCP Server for Grafana](https://github.com/gra
 
 ### From Source
 
-```bash
-# Clone the repository
-git clone https://github.com/aantti/mcp-netbird
-cd mcp-netbird
+## Clone the repository
 
-# Build and install
+```bash
+git clone https://github.com/aantti/mcp-netbird
+```
+
+## Build and install
+
+```bash
+cd mcp-netbird && \
 make install
 ```
 
@@ -81,14 +85,29 @@ This project is written in Go. Install Go following the instructions for your pl
 To run the server manually, use:
 
 ```bash
-NETBIRD_API_TOKEN=your-token make run
+export NETBIRD_API_TOKEN=your-token && \
+go run cmd/mcp-netbird/main.go
 ```
 
 Or in SSE mode:
 
 ```bash
-NETBIRD_API_TOKEN=your-token make run-sse
+export NETBIRD_API_TOKEN=your-token && \
+go run cmd/mcp-netbird/main.go --transport sse --sse-address :8001
 ```
+
+### Debugging
+
+The MCP Inspector is an interactive developer tool for testing and debugging MCP servers. Read more about it [here](https://modelcontextprotocol.io/docs/tools/inspector).
+
+Here's how to start the MCP Inspector:
+
+```bash
+export NETBIRD_API_TOKEN=your-token && \
+npx @modelcontextprotocol/inspector
+```
+
+Netbird MCP Server can then be tested with either `stdio` or `SSE` transport type.
 
 ### Testing
 
