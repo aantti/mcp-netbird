@@ -54,7 +54,7 @@ The server requires the following environment variables:
 
 ## Usage
 
-1. Get your Netbird API token from the Netbird management console.
+1. Get your [Netbird API token](https://docs.netbird.io/api/guides/authentication) from the Netbird management console.
 
 2. Install the `mcp-netbird` binary using one of the installation methods above. Make sure the binary is in your PATH.
 
