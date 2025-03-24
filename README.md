@@ -49,6 +49,7 @@ The server requires the following environment variables:
 | Tool | Category | Description |
 | --- | --- | --- |
 | `list_netbird_peers` | Peers | List all peers in your Netbird network |
+| `list_netbird_groups` | Groups | List all groups in your Netbird network |
 
 ## Usage
 

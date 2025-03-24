@@ -8,7 +8,7 @@ import (
 	"github.com/mark3labs/mcp-go/server"
 )
 
-type NetbirdGroup struct {
+type NetbirdPeerGroup struct {
 	ID             string `json:"id"`
 	Name           string `json:"name"`
 	PeersCount     int    `json:"peers_count"`
@@ -25,7 +25,7 @@ type NetbirdPeer struct {
 	DNSLabel                    string         `json:"dns_label"`
 	ExtraDNSLabels              []string       `json:"extra_dns_labels"`
 	GeonameID                   int            `json:"geoname_id"`
-	Groups                      []NetbirdGroup `json:"groups"`
+	Groups                      []NetbirdPeerGroup `json:"groups"`
 	Hostname                    string         `json:"hostname"`
 	ID                          string         `json:"id"`
 	InactivityExpirationEnabled bool           `json:"inactivity_expiration_enabled"`
