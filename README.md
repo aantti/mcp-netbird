@@ -4,6 +4,8 @@ A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server for [Ne
 
 This project is derived from the [MCP Server for Grafana](https://github.com/grafana/mcp-grafana) by Grafana Labs and is licensed under the same Apache License 2.0.
 
+**Note: this project is still in development and may not work as expected.**
+
 ## Installation
 
 ### From Source
