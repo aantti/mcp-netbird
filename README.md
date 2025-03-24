@@ -78,6 +78,8 @@ For more information on how to add a similar configuration to Claude Desktop, se
 
 > Note: if you see something along the lines of `[netbird] [error] spawn mcp-netbird ENOENT` in Claude Desktop logs, you need to specify the full path to `mcp-netbird`. On macOS Claude Logs are in `~/Library/Logs/Claude`.
 
+4. Try asking questions along the lines of "Can you explain my Netbird peers, groups and policies to me?"
+
 ## Development
 
 Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions or improvements.
