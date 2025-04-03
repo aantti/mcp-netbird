@@ -1,4 +1,5 @@
 # Netbird MCP Server
+[![smithery badge](https://smithery.ai/badge/@aantti/mcp-netbird)](https://smithery.ai/server/@aantti/mcp-netbird)
 
 A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server for [Netbird](https://netbird.io/).
 
@@ -6,22 +7,32 @@ This project is derived from the [MCP Server for Grafana](https://github.com/gra
 
 **Note: this project is still in development.**
 
-## Installing from source
+## Installing
 
-### Clone the repository
+### Installing via Smithery
+
+To install Netbird MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@aantti/mcp-netbird):
+
+```bash
+npx -y @smithery/cli install @aantti/mcp-netbird --client claude
+```
+
+### Installing from source
+
+#### Clone the repository
 
 ```bash
 git clone https://github.com/aantti/mcp-netbird
 ```
 
-### Build and install
+#### Build and install
 
 ```bash
 cd mcp-netbird && \
 make install
 ```
 
-## Installing from GitHub
+### Installing from GitHub
 
 ```bash
 go install github.com/aantti/mcp-netbird/cmd/mcp-netbird@latest
