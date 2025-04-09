@@ -60,7 +60,7 @@ The server requires the following environment variables:
 To add new tools:
 
 1. Create a new file in `tools` (e.g., `tools/users.go`), possibly use existing code as a template
-2. Add API route specifics to the new file
+2. Add API route and response specifics to the new file
 3. Add the tool to `func newServer()` in `cmd/main.go`
 
 ## Usage
