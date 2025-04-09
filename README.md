@@ -124,7 +124,7 @@ export NETBIRD_API_TOKEN=your-token && \
 npx @modelcontextprotocol/inspector
 ```
 
-Netbird MCP Server can then be tested with either `stdio` or `SSE` transport type. For `stdio` specify the full path to mcp-netbird in the UI.
+Netbird MCP Server can then be tested with either `stdio` or `SSE` transport type. For `stdio` specify the full path to `mcp-netbird` in the UI.
 
 ### Testing
 
