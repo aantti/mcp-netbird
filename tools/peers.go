@@ -16,32 +16,32 @@ type NetbirdPeerGroup struct {
 }
 
 type NetbirdPeer struct {
-	AccessiblePeersCount        int            `json:"accessible_peers_count"`
-	ApprovalRequired            bool           `json:"approval_required"`
-	CityName                    string         `json:"city_name"`
-	Connected                   bool           `json:"connected"`
-	ConnectionIP                string         `json:"connection_ip"`
-	CountryCode                 string         `json:"country_code"`
-	DNSLabel                    string         `json:"dns_label"`
-	ExtraDNSLabels              []string       `json:"extra_dns_labels"`
-	GeonameID                   int            `json:"geoname_id"`
+	AccessiblePeersCount        int                `json:"accessible_peers_count"`
+	ApprovalRequired            bool               `json:"approval_required"`
+	CityName                    string             `json:"city_name"`
+	Connected                   bool               `json:"connected"`
+	ConnectionIP                string             `json:"connection_ip"`
+	CountryCode                 string             `json:"country_code"`
+	DNSLabel                    string             `json:"dns_label"`
+	ExtraDNSLabels              []string           `json:"extra_dns_labels"`
+	GeonameID                   int                `json:"geoname_id"`
 	Groups                      []NetbirdPeerGroup `json:"groups"`
-	Hostname                    string         `json:"hostname"`
-	ID                          string         `json:"id"`
-	InactivityExpirationEnabled bool           `json:"inactivity_expiration_enabled"`
-	IP                          string         `json:"ip"`
-	KernelVersion               string         `json:"kernel_version"`
-	LastLogin                   time.Time      `json:"last_login"`
-	LastSeen                    time.Time      `json:"last_seen"`
-	LoginExpirationEnabled      bool           `json:"login_expiration_enabled"`
-	LoginExpired                bool           `json:"login_expired"`
-	Name                        string         `json:"name"`
-	OS                          string         `json:"os"`
-	SerialNumber                string         `json:"serial_number"`
-	SSHEnabled                  bool           `json:"ssh_enabled"`
-	UIVersion                   string         `json:"ui_version"`
-	UserID                      string         `json:"user_id"`
-	Version                     string         `json:"version"`
+	Hostname                    string             `json:"hostname"`
+	ID                          string             `json:"id"`
+	InactivityExpirationEnabled bool               `json:"inactivity_expiration_enabled"`
+	IP                          string             `json:"ip"`
+	KernelVersion               string             `json:"kernel_version"`
+	LastLogin                   time.Time          `json:"last_login"`
+	LastSeen                    time.Time          `json:"last_seen"`
+	LoginExpirationEnabled      bool               `json:"login_expiration_enabled"`
+	LoginExpired                bool               `json:"login_expired"`
+	Name                        string             `json:"name"`
+	OS                          string             `json:"os"`
+	SerialNumber                string             `json:"serial_number"`
+	SSHEnabled                  bool               `json:"ssh_enabled"`
+	UIVersion                   string             `json:"ui_version"`
+	UserID                      string             `json:"user_id"`
+	Version                     string             `json:"version"`
 }
 
 type ListNetbirdPeersParams struct{}
@@ -63,7 +63,6 @@ var ListNetbirdPeers = mcpnetbird.MustTool(
 	listNetbirdPeers,
 )
 
-// AddNetbirdTools registers all Netbird tools with the MCP server
 func AddNetbirdPeerTools(mcp *server.MCPServer) {
 	ListNetbirdPeers.Register(mcp)
 }
