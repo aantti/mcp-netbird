@@ -46,11 +46,20 @@ The server requires the following environment variables:
 
 ### Tools
 
-| Tool | Category | Description |
-| --- | --- | --- |
-| `list_netbird_peers` | Peers | List all peers in your Netbird network |
-| `list_netbird_groups` | Groups | List all groups in your Netbird network |
-| `list_netbird_policies` | Policies | List all policies in your Netbird network |
+| Tool | Category | Description | Netbird API |
+| --- | --- | --- | --- |
+| `list_netbird_peers` | Peers | List all peers in your Netbird network | [List all Peers](https://docs.netbird.io/api/resources/peers#list-all-peers) |
+| `list_netbird_groups` | Groups | List all groups in your Netbird network | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
+| `list_netbird_policies` | Policies | List all policies in your Netbird network | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
+| `list_netbird_networks` | Networks | List all networks in your Netbird network | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
+
+### Adding tools
+
+To add new tools:
+
+1. Create a new file in `tools` (e.g., `tools/users.go`), possibly use existing code as a template
+2. Add API route specifics to the new file
+3. Add the tool to `func newServer()` in `cmd/main.go`
 
 ## Usage
 
