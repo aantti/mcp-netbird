@@ -4,6 +4,8 @@ A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server for [Ne
 
 This project is derived from the [MCP Server for Grafana](https://github.com/grafana/mcp-grafana) by Grafana Labs and is licensed under the same Apache License 2.0.
 
+It also uses [MCP Go](https://github.com/mark3labs/mcp-go) by Mark III Labs.
+
 **Note: this project is still in development.**
 
 ## Installing from source
@@ -48,10 +50,10 @@ The server requires the following environment variables:
 
 | Tool | Category | Description | Netbird API |
 | --- | --- | --- | --- |
-| `list_netbird_peers` | Peers | List all peers in your Netbird network | [List all Peers](https://docs.netbird.io/api/resources/peers#list-all-peers) |
-| `list_netbird_groups` | Groups | List all groups in your Netbird network | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
-| `list_netbird_policies` | Policies | List all policies in your Netbird network | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
-| `list_netbird_networks` | Networks | List all networks in your Netbird network | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
+| `list_netbird_peers` | Peers | List all Netbird peers | [List all Peers](https://docs.netbird.io/api/resources/peers#list-all-peers) |
+| `list_netbird_groups` | Groups | List all Netbird groups | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
+| `list_netbird_policies` | Policies | List all Netbird policies | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
+| `list_netbird_networks` | Networks | List all Netbird networks | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
 
 ### Adding tools
 
