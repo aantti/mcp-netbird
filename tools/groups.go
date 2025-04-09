@@ -41,7 +41,6 @@ var ListNetbirdGroups = mcpnetbird.MustTool(
 	listNetbirdGroups,
 )
 
-// AddNetbirdTools registers all Netbird tools with the MCP server
 func AddNetbirdGroupTools(mcp *server.MCPServer) {
 	ListNetbirdGroups.Register(mcp)
 }

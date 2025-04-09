@@ -47,7 +47,6 @@ var ListNetbirdPolicies = mcpnetbird.MustTool(
 	listNetbirdPolicies,
 )
 
-// AddNetbirdPolicyTools registers all Netbird policy tools with the MCP server
 func AddNetbirdPolicyTools(mcp *server.MCPServer) {
 	ListNetbirdPolicies.Register(mcp)
 }
