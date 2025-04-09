@@ -50,10 +50,10 @@ The server requires the following environment variables:
 
 | Tool | Category | Description | Netbird API |
 | --- | --- | --- | --- |
-| `list_netbird_peers` | Peers | List all Netbird peers | [List all Peers](https://docs.netbird.io/api/resources/peers#list-all-peers) |
-| `list_netbird_groups` | Groups | List all Netbird groups | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
-| `list_netbird_policies` | Policies | List all Netbird policies | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
-| `list_netbird_networks` | Networks | List all Netbird networks | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
+| `list_netbird_peers` | Peers | All Netbird peers | [List all Peers](https://docs.netbird.io/api/resources/peers#list-all-peers) |
+| `list_netbird_groups` | Groups | All Netbird groups | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
+| `list_netbird_policies` | Policies | All Netbird policies | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
+| `list_netbird_networks` | Networks | All Netbird networks | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
 
 ### Adding tools
 
