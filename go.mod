@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/invopop/jsonschema v0.13.0
-	github.com/mark3labs/mcp-go v0.15.0
+	github.com/mark3labs/mcp-go v0.18.0
 )
 
 require (
