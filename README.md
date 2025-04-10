@@ -38,7 +38,7 @@ The server requires the following environment variables:
 
 ## Features
 
-This server uses the Netbird API to provide LLM information about Netbird network. Currently it's a 1:1 mapping of select read-only Netbird API resources to tools.
+This server uses the Netbird API to provide LLMs information about Netbird network. Currently it's a 1:1 mapping of select read-only Netbird API resources to tools.
 
 - [x] Uses Netbird API to access configuration and status
 - [x] Configurable API endpoint
@@ -142,3 +142,5 @@ make lint
 This project is licensed under the [Apache License, Version 2.0](LICENSE).
 
 This project includes software developed at Grafana Labs (https://grafana.com/).
+
+This project includes software developed at Mark III Labs (https://github.com/mark3labs/mcp-go).
