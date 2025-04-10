@@ -18,10 +18,10 @@ type PortRangeMapping struct {
 type NetbirdPortAllocations struct {
 	ID                string             `json:"id"`
 	Name              string             `json:"name"`
-	IngressPeerId     string             `json:"ingress_peer_id"`
+	IngressPeerID     string             `json:"ingress_peer_id"`
 	Region            string             `json:"region"`
 	Enabled           bool               `json:"enabled"`
-	IngressIp         string             `json:"ingress_ip"`
+	IngressIP         string             `json:"ingress_ip"`
 	PortRangeMappings []PortRangeMapping `json:"port_range_mappings"`
 }
 
