@@ -54,6 +54,7 @@ The server requires the following environment variables:
 | `list_netbird_groups` | Groups | All Netbird groups | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
 | `list_netbird_policies` | Policies | All Netbird policies | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
 | `list_netbird_networks` | Networks | All Netbird networks | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
+| `list_netbird_posture_checks` | Posture Checks | All Netbird posture checks | [List all Posture Checks](https://docs.netbird.io/api/resources/posture-checks#list-all-posture-checks) |
 
 ### Adding tools
 
