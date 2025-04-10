@@ -38,13 +38,11 @@ The server requires the following environment variables:
 
 ## Features
 
-- [x] List Netbird peers with detailed information
-  - Connected status
-  - Location information
-  - System details
-  - Group membership
+This server uses the Netbird API to provide LLM information about Netbird network. Currently it's a 1:1 mapping of select read-only Netbird API resources to tools.
+
+- [x] Uses Netbird API to access configuration and status
 - [x] Configurable API endpoint
-- [x] Secure token-based authentication
+- [x] Secure token-based authentication for Netbird API
 
 ### Tools
 
