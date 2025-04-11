@@ -54,6 +54,7 @@ This server uses the Netbird API to provide LLMs information about Netbird netwo
 | `list_netbird_policies` | Policies | All policies | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
 | `list_netbird_posture_checks` | Posture Checks | All posture checks | [List all Posture Checks](https://docs.netbird.io/api/resources/posture-checks#list-all-posture-checks) |
 | `list_netbird_networks` | Networks | All networks | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
+| `list_netbird_nameservers` | Nameservers | All nameserver groups | [List all Nameserver Groups](https://docs.netbird.io/api/resources/dns) |
 
 ### Adding tools
 
