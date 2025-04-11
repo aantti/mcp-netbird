@@ -27,7 +27,7 @@ type NetbirdPortAllocations struct {
 
 type ListNetbirdPortAllocationsParams struct {
 	// PeerID is the ID of the peer to get port allocations for
-	// This field is required and must match a valid peer ID from list_netbird_peers
+	// This field is required and must match a valid peer ID from NetbirdPeer in tools/peers.go
 	PeerID string `mcp:"peer_id" validate:"required"`
 }
 

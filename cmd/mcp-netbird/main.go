@@ -24,6 +24,7 @@ func newServer() *server.MCPServer {
 	tools.AddNetbirdNetworkTools(s)
 	tools.AddNetbirdPostureCheckTools(s)
 	tools.AddNetbirdPortAllocationTools(s)
+	tools.AddNetbirdNameserverTools(s)
 	return s
 }
 
