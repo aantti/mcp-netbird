@@ -46,15 +46,15 @@ This server uses the Netbird API to provide LLMs information about Netbird netwo
 
 ### Tools
 
-| Tool | Category | Description | Netbird API |
-| --- | --- | --- | --- |
-| `list_netbird_peers` | Peers | All peers | [List all Peers](https://docs.netbird.io/api/resources/peers#list-all-peers) |
-| `list_netbird_port_allocations` | Ingress Ports | All ingress ports for `peerId` | [List all Port Allocations](https://docs.netbird.io/api/resources/ingress-ports) |
-| `list_netbird_groups` | Groups | All groups | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
-| `list_netbird_policies` | Policies | All policies | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
-| `list_netbird_posture_checks` | Posture Checks | All posture checks | [List all Posture Checks](https://docs.netbird.io/api/resources/posture-checks#list-all-posture-checks) |
-| `list_netbird_networks` | Networks | All networks | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
-| `list_netbird_nameservers` | Nameservers | All nameserver groups | [List all Nameserver Groups](https://docs.netbird.io/api/resources/dns) |
+| Tool | Description | Netbird API |
+| --- | --- | --- |
+| `list_netbird_peers` | All peers | [List all Peers](https://docs.netbird.io/api/resources/peers#list-all-peers) |
+| `list_netbird_port_allocations` | All ingress ports | [List all Port Allocations](https://docs.netbird.io/api/resources/ingress-ports) |
+| `list_netbird_groups` | All groups | [List all Groups](https://docs.netbird.io/api/resources/groups#list-all-groups) |
+| `list_netbird_policies` | All policies | [List all Policies](https://docs.netbird.io/api/resources/policies#list-all-policies) |
+| `list_netbird_posture_checks` | All posture checks | [List all Posture Checks](https://docs.netbird.io/api/resources/posture-checks#list-all-posture-checks) |
+| `list_netbird_networks` | All networks | [List all Networks](https://docs.netbird.io/api/resources/networks#list-all-networks) |
+| `list_netbird_nameservers` | All nameserver groups | [List all Nameserver Groups](https://docs.netbird.io/api/resources/dns) |
 
 ### Adding tools
 
