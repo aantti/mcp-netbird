@@ -1,0 +1,31 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - netbirdApiToken
+    properties:
+      netbirdApiToken:
+        type: string
+        description: Your Netbird API token for authentication.
+      netbirdHost:
+        type: string
+        default: api.netbird.io
+        description: Optional Netbird API host. Defaults to api.netbird.io.
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: '/app/mcp-netbird',
+      args: [],
+      env: {
+        NETBIRD_API_TOKEN: config.netbirdApiToken,
+        NETBIRD_HOST: config.netbirdHost
+      }
+    })
+  exampleConfig:
+    netbirdApiToken: your-dummy-api-token
+    netbirdHost: api.netbird.io
