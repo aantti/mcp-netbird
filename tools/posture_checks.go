@@ -7,11 +7,6 @@ import (
 	"github.com/mark3labs/mcp-go/server"
 )
 
-type NetbirdCheck struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
-}
-
 type VersionCheck struct {
 	MinVersion string `json:"min_version,omitempty"`
 }
