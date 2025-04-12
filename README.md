@@ -123,7 +123,7 @@ docker run --name mcp-netbird -p 8001:8001 -e NETBIRD_API_TOKEN=<your-api-token>
 
 ## ToolHive
 
-[ToolHive](https://github.com/StacklokLabs/toolhive) (thv) is a lightweight utility designed to simplify the deployment and management of MCP (Model Context Protocol) servers, ensuring ease of use, consistency, and security.
+[ToolHive](https://github.com/StacklokLabs/toolhive) (thv) is a lightweight utility designed to simplify the deployment and management of MCP servers.
 
 You can use ToolHive to deploy and run Netbird MCP as follows:
 
