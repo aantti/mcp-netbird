@@ -34,5 +34,8 @@ COPY --from=builder --chown=1000:1000 /app/mcp-netbird /app/
 # Use the non-root user
 USER mcp-netbird
 
-# Run the application in stdio mode
-ENTRYPOINT ["/app/mcp-netbird"]
+# Expose the port the app runs on
+EXPOSE 8001
+
+# Run the application in SSE mode
+ENTRYPOINT ["/app/mcp-netbird", "--transport", "sse", "--sse-address", "0.0.0.0:8001"]
