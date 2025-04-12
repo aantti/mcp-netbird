@@ -106,6 +106,47 @@ For more information on how to add a similar configuration to Claude Desktop, se
    
 ![claude-desktop-mcp-netbird](https://github.com/user-attachments/assets/094614cd-9399-4c90-adb3-06ae67c604e4)
 
+## Docker
+
+Build an image, tag it, and run it:
+
+```bash
+docker build -t mcp-netbird-sse:v1 -f Dockerfile.sse .
+```
+
+```bash
+docker run --name mcp-netbird -p 8001:8001 -e NETBIRD_API_TOKEN=<your-api-token> mcp-netbird-sse:v1
+
+```
+
+## ToolHive
+
+[ToolHive](https://github.com/StacklokLabs/toolhive) (thv) is a lightweight utility designed to simplify the deployment and management of MCP (Model Context Protocol) servers, ensuring ease of use, consistency, and security.
+
+You can use ToolHive to deploy and run Netbird MCP as follows:
+
+1. Install `thv` as described in [ToolHive documentation](https://github.com/StacklokLabs/toolhive#installation).
+
+2. Add Netbird API token to `thv` secrets:
+
+```bash
+thv secret set netbird
+```
+
+3. Build an SSE image as described in the [Docker section above](#docker)
+
+4. Start Netbird MCP:
+
+```bash
+thv run --secret netbird,target=NETBIRD_API_TOKEN --transport sse --name thv-mcp-netbird --port 8080 --target-port 8001 mcp-netbird-sse:v1
+```
+
+5. When you want to stop the server, use:
+
+```bash
+thv stop thv-mcp-netbird
+```
+
 ## Development
 
 Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions or improvements.
