@@ -108,11 +108,13 @@ For more information on how to add a similar configuration to Claude Desktop, se
 
 ## Docker
 
-Build an image, tag it, and run it:
+Build an image and tag it:
 
 ```bash
 docker build -t mcp-netbird-sse:v1 -f Dockerfile.sse .
 ```
+
+Run the image:
 
 ```bash
 docker run --name mcp-netbird -p 8001:8001 -e NETBIRD_API_TOKEN=<your-api-token> mcp-netbird-sse:v1
@@ -125,7 +127,7 @@ docker run --name mcp-netbird -p 8001:8001 -e NETBIRD_API_TOKEN=<your-api-token>
 
 You can use ToolHive to deploy and run Netbird MCP as follows:
 
-1. Install `thv` as described in [ToolHive documentation](https://github.com/StacklokLabs/toolhive#installation).
+1. Install `thv` as described in [ToolHive README](https://github.com/StacklokLabs/toolhive#installation).
 
 2. Add Netbird API token to `thv` secrets:
 
@@ -133,9 +135,9 @@ You can use ToolHive to deploy and run Netbird MCP as follows:
 thv secret set netbird
 ```
 
-3. Build an SSE image as described in the [Docker section above](#docker)
+3. Build an SSE image as described in the Docker section [above](#docker)
 
-4. Start Netbird MCP:
+4. Start Netbird MCP with `thv run` on port 8080:
 
 ```bash
 thv run --secret netbird,target=NETBIRD_API_TOKEN --transport sse --name thv-mcp-netbird --port 8080 --target-port 8001 mcp-netbird-sse:v1
