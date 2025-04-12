@@ -62,7 +62,7 @@ func main() {
 		"stdio",
 		"Transport type (stdio or sse)",
 	)
-	addr := flag.String("sse-address", "localhost:8000", "The host and port to start the sse server on")
+	addr := flag.String("sse-address", "localhost:8001", "The host and port to start the sse server on")
 	flag.Parse()
 
 	if err := run(transport, *addr); err != nil {
