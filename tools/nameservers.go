@@ -28,7 +28,12 @@ type NetbirdNameservers struct {
 type ListNetbirdNameserversParams struct{}
 
 func listNetbirdNameservers(ctx context.Context, args ListNetbirdNameserversParams) ([]NetbirdNameservers, error) {
-	client := mcpnetbird.NewNetbirdClient()
+	var client *mcpnetbird.NetbirdClient
+	if mcpnetbird.TestNetbirdClient != nil {
+		client = mcpnetbird.TestNetbirdClient
+	} else {
+		client = mcpnetbird.NewNetbirdClient()
+	}
 
 	var nameservers []NetbirdNameservers
 	if err := client.Get(ctx, "/dns/nameservers", &nameservers); err != nil {

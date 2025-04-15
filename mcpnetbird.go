@@ -28,6 +28,9 @@ type NetbirdClient struct {
 	client  *http.Client
 }
 
+// Single global variable for testing
+var TestNetbirdClient *NetbirdClient
+
 // NewNetbirdClient creates a new NetbirdClient with the given API key
 func NewNetbirdClient() *NetbirdClient {
 	host := os.Getenv(netbirdHostEnvVar)

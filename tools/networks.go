@@ -20,7 +20,12 @@ type NetbirdNetwork struct {
 type ListNetbirdNetworksParams struct{}
 
 func listNetbirdNetworks(ctx context.Context, args ListNetbirdNetworksParams) ([]NetbirdNetwork, error) {
-	client := mcpnetbird.NewNetbirdClient()
+	var client *mcpnetbird.NetbirdClient
+	if mcpnetbird.TestNetbirdClient != nil {
+		client = mcpnetbird.TestNetbirdClient
+	} else {
+		client = mcpnetbird.NewNetbirdClient()
+	}
 
 	var networks []NetbirdNetwork
 	if err := client.Get(ctx, "/networks", &networks); err != nil {
