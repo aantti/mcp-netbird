@@ -42,6 +42,13 @@ func NewNetbirdClient() *NetbirdClient {
 	}
 }
 
+func NewNetbirdClientWithBaseURL(baseURL string) *NetbirdClient {
+	return &NetbirdClient{
+		baseURL: baseURL,
+		client:  &http.Client{},
+	}
+}
+
 // do performs an HTTP request to the Netbird API
 func (c *NetbirdClient) do(ctx context.Context, method, path string, body, v any) error {
 	token := NetbirdAPIKeyFromContext(ctx)
