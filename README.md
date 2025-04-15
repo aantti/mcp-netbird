@@ -184,7 +184,7 @@ Netbird MCP Server can then be tested with either `stdio` or `SSE` transport typ
 
 ### Testing
 
-**TODO: add tests**
+**TODO: add more tests**
 
 ### Linting
 
