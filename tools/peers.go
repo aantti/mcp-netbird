@@ -47,7 +47,12 @@ type NetbirdPeer struct {
 type ListNetbirdPeersParams struct{}
 
 func listNetbirdPeers(ctx context.Context, args ListNetbirdPeersParams) ([]NetbirdPeer, error) {
-	client := mcpnetbird.NewNetbirdClient()
+	var client *mcpnetbird.NetbirdClient
+	if mcpnetbird.TestNetbirdClient != nil {
+		client = mcpnetbird.TestNetbirdClient
+	} else {
+		client = mcpnetbird.NewNetbirdClient()
+	}
 
 	var peers []NetbirdPeer
 	if err := client.Get(ctx, "/peers", &peers); err != nil {

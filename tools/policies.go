@@ -31,7 +31,12 @@ type NetbirdPolicy struct {
 type ListNetbirdPoliciesParams struct{}
 
 func listNetbirdPolicies(ctx context.Context, args ListNetbirdPoliciesParams) ([]NetbirdPolicy, error) {
-	client := mcpnetbird.NewNetbirdClient()
+	var client *mcpnetbird.NetbirdClient
+	if mcpnetbird.TestNetbirdClient != nil {
+		client = mcpnetbird.TestNetbirdClient
+	} else {
+		client = mcpnetbird.NewNetbirdClient()
+	}
 
 	var policies []NetbirdPolicy
 	if err := client.Get(ctx, "/policies", &policies); err != nil {
